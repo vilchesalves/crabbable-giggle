@@ -8,13 +8,11 @@ use lib::run;
 
 fn main() {
     let args = env::args().collect();
-    let config = Config::new(&args).unwrap_or_else(|err| {
-        println!("couldn't parse the arguments: {}", err);
+    let config = Config::new(&args).unwrap_or_else(|_err| {
         process::exit(1);
     });
 
-    if let Err(e) = run(config) {
-        println!("Application error: {}", e);
+    if let Err(_e) = run(config) {
         process::exit(1);
     };
 }
