@@ -2,6 +2,7 @@ use std::env;
 use std::process;
 
 mod minigrep;
+mod cacher;
 
 fn main() {
     let args = env::args().collect();
