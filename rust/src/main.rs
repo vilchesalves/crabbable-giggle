@@ -3,6 +3,7 @@ use std::process;
 
 mod minigrep;
 mod cacher;
+mod doors;
 
 fn main() {
     let args = env::args().collect();
