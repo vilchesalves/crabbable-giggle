@@ -4,6 +4,7 @@ use std::process;
 mod minigrep;
 mod cacher;
 mod doors;
+mod iterators;
 
 fn main() {
     let args = env::args().collect();
