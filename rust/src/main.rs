@@ -6,6 +6,8 @@ mod cacher;
 mod doors;
 mod iterators;
 
+mod r#box;
+
 fn main() {
     let args = env::args();
     let config = minigrep::Config::new(args).unwrap_or_else(|err| {
