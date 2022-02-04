@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 #[derive(Debug)]
-enum List {
+pub enum List {
     Cons(i32, Box<List>),
     Nil,
 }
@@ -41,7 +41,7 @@ mod tests {
         }
 
         fn hello(name: &str) {
-            println!("Hello, {name}!");
+            println!("hello {}", name);
         }
 
         let x = 5;
